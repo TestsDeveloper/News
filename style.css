@@ -1,0 +1,11 @@
+.overlay:hover, .hover:hover {
+    cursor: pointer;
+    filter: contrast(40%);
+    transition: all ease-in-out 0.2s;
+}
+
+.search {
+    position: absolute;
+    right: 1.5rem;
+    top: 5px;
+}
