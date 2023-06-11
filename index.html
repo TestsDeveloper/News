@@ -5,60 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-<!-- bootstrap css -->
+    <!-- bootstrap css -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="container-lg">
         <!-- nav bar start -->
-        <div class="m-md-5  d-flex justify-content-between">
+        <div class="m-md-5 d-flex justify-content-between ">
             <div>
                 <h2 class="text-danger m-3">Bultin</h2>
             </div>
            
             <ul class="text-start list-inline d-md-flex text-secondary d-none ">
-                    <li class="p-2"><a href="index.html" class="text-decoration-none text-black">Home</a></li>
-                    <li class="p-2"><a href="#" class="text-decoration-none text-secondary">About</a></li>
-                    <li class="p-2"><a href="#" class="text-decoration-none text-secondary">Contact</a></li>
+                <li class="p-4"><a href="index.html" class="text-decoration-none text-black">Home</a></li>
+                <li class="p-4"><a href="#" class="text-decoration-none text-secondary">About</a></li>
+                <li class="p-4"><a href="#" class="text-decoration-none text-secondary">Contact</a></li>
             </ul>
-            
+    
             <div class="m-3">
-                <button class="btn btn-outline-danger me-3">Sign In</button>
-                <button class="btn btn-danger">Sign Up</button>
+                <button class="btn btn-outline-danger me-3 px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalLogin">Sign In</button>
+                <button class="btn btn-outline-danger me-3 px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalLRegister">Sign Up</button>
+
             </div>
         </div>
         <!-- nav bar end -->
-       
-        <!-- main title -->
-        <div class="p-md-5">
-            <div class="row d-flex">
-                <div class="col-lg-6">
-                    <img class="w-100 rounded-4" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/BF0D/production/_106090984_2e39b218-c369-452e-b5be-d2476f9d8728.jpg" alt="">
-                    
-                </div>
 
-                <div class="col-lg-6  ">
-                    <div class="fs-2 font-weight-bold text-muted">Let Watch Marvel Movie</div>
-                    <div class="mt-3">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius facilis doloribus quidem assumenda! Dolor libero hic deleniti quibusdam necessitatibus repellat, cum quia, 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id eum praesentium repudiandae nostrum commodi consequatur expedita tempora labore facilis a reiciendis numquam, fugiat unde vitae corrupti cumque. Incidunt, eum eveniet?
-
-                        <div class="mt-3"><span class="text-danger">Tourist</span> - 2.2.2023</div>
+        <div class="container my-4">
+            <div class="row justify-content-between align-items-center px-5">
+                <div class="col-6 col-lg-2">
+                    <div class="form-group">
+                        <select class="form-select shadow-sm rounded-3 text-muted">
+                            <option value="1">Trend News</option>
+                            <option value="2">Popular News</option>
+                            <option value="3">Latest News</option>
+                        </select>
                     </div>
                 </div>
-                
+                <div class="col-6 col-lg-3 d-flex position-relative">
+                    <input type="text" class="form-control shadow-sm rounded-3 text-muted w-100 h-100" placeholder="Search...">
+                    <a href="#" class="text-decoration-none text-muted hover search"><i class="fas fa-search"></i></a>
+                </div>
             </div>
         </div>
-
         <!-- last news start -->
        <section class="mt-4 p-md-5" id="lastNews">
         <div class="d-flex justify-content-between p-1">
             <h3 class="text-muted">Latest news</h3>
-            <div class="text-danger"><a href="seeAllPost.html" class="text-decoration-none text-muted">See all</a><i class="ms-1 fa-solid fa-arrow-right-long"></i></div>
         </div>
 
         <div class="" id="">
@@ -66,35 +61,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                     <div class="card rounded-4 m-auto">
                         <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
-                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
-                            <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
-                                <i class="fa-sharp fa-solid fa-eye"></i> 20k
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
-                                <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
-                        <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
+                            <img src="https://images.unsplash.com/photo-1604200213928-ba3cf4fc8436?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
                             <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
                                 <i class="fa-sharp fa-solid fa-eye"></i> 20k
@@ -121,7 +88,34 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                     <div class="card rounded-4 m-auto">
                         <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
+                            <img src="https://plus.unsplash.com/premium_photo-1661894521636-d7cd973540f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNlbGVicml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
+                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
+                            <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
+                                <i class="fa-sharp fa-solid fa-eye"></i> 20k
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-muted">South East Aisa</h5>
+                                <small class="text-muted">3/17/2023</small>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <div class="text-danger fw-bolder">Movie</div>
+                                <div class="">
+                                    <i class="fa-solid fa-heart text-danger fs-5 m-2"></i>
+                                    <i class="fa-regular fa-message text-danger fs-5 m-2 "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                    <div class="card rounded-4 m-auto">
+                        <div class="position-relative" style="height:189px;">
+                            <img src="https://images.unsplash.com/photo-1532170579297-281918c8ae72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNlbGVicml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
                             <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
                                 <i class="fa-sharp fa-solid fa-eye"></i> 20k
@@ -148,7 +142,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                     <div class="card rounded-4 m-auto">
                         <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
+                            <img src="https://plus.unsplash.com/premium_photo-1677094310913-0e393f34cb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmV1cmFsJTIwbmV0d29ya3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
                             <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
                                 <i class="fa-sharp fa-solid fa-eye"></i> 20k
@@ -175,7 +169,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                     <div class="card rounded-4 m-auto">
                         <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
+                            <img src="https://images.unsplash.com/photo-1553375886-59c75d4ee8a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNlbGVicml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
                             <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
                                 <i class="fa-sharp fa-solid fa-eye"></i> 20k
@@ -202,166 +196,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                     <div class="card rounded-4 m-auto">
                         <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
-                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
-                            <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
-                                <i class="fa-sharp fa-solid fa-eye"></i> 20k
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
-                                <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </div>
-       </section>
-        <!-- last news end -->
-
-
-        <!-- trend news -->
-        <section class="mt-4 p-md-5 " id="trendNews">
-            <h3 class="text-muted mb-3">Trend News</h3>
-
-            <div class="row">
-                <div class="col-lg-7 col-md-12 mb-3">
-                    <div class="card bg-dark text-white" style="height: 268px;">
-                        <div class="overlay w-100 h-100 object-fit-cover bg-dark position-absolute opacity-50"></div>
-                        <img src="https://images.thedirect.com/media/article_full/dc-2023-universe.jpg" class="card-img img-fluid w-100 h-100 object-fit-fill" alt="...">
-                        <div class="position-absolute bottom-0">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between text-white">
-                                    <h5 class="">South East Asia</h5>
-                                    <small class="">3/17/2023</small>
-                                </div>
-                                
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                                </p>
-                
-                                <div class="d-flex justify-content-between">
-                                    <div class="text-danger fw-bolder">Movie</div>
-                                    <div class="">
-                                        <i class="fa-solid fa-heart text-danger fs-5 m-2"></i>
-                                        <i class="fa-regular fa-message text-danger fs-5 m-2 "></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-5 col-md-12">
-                    <div class="card bg-dark text-white" style="height: 268px;">
-                        <div class="overlay w-100 h-100 object-fit-cover bg-dark position-absolute opacity-50"></div>
-                        <img src="https://images.thedirect.com/media/article_full/dc-2023-universe.jpg" class="card-img img-fluid w-100 h-100 object-fit-fill" alt="...">
-                        <div class="position-absolute bottom-0">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="">South East Asia</h5>
-                                    <small class="">3/17/2023</small>
-                                </div>
-                                
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                                </p>
-                
-                                <div class="d-flex justify-content-between">
-                                    <div class="text-danger fw-bolder">Movie</div>
-                                    <div class="">
-                                        <i class="fa-solid fa-heart text-danger fs-5 m-2"></i>
-                                        <i class="fa-regular fa-message text-danger fs-5 m-2 "></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-5 col-md-12">
-                    <div class="card bg-dark text-white" style="height: 268px;">
-                        <div class="overlay w-100 h-100 object-fit-cover bg-dark position-absolute opacity-50"></div>
-                        <img src="https://images.thedirect.com/media/article_full/dc-2023-universe.jpg" class="card-img img-fluid w-100 h-100 object-fit-fill" alt="...">
-                        <div class="position-absolute bottom-0">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="">South East Asia</h5>
-                                    <small class="">3/17/2023</small>
-                                </div>
-                                
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                                </p>
-                
-                                <div class="d-flex justify-content-between">
-                                    <div class="text-danger fw-bolder">Movie</div>
-                                    <div class="">
-                                        <i class="fa-solid fa-heart text-danger fs-5 m-2"></i>
-                                        <i class="fa-regular fa-message text-danger fs-5 m-2 "></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-12 mb-3">
-                    <div class="card bg-dark text-white" style="height: 268px;">
-                        <div class="overlay w-100 h-100 object-fit-cover bg-dark position-absolute opacity-50"></div>
-                        <img src="https://images.thedirect.com/media/article_full/dc-2023-universe.jpg" class="card-img img-fluid w-100 h-100 object-fit-fill" alt="...">
-                        <div class="position-absolute bottom-0">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between text-white">
-                                    <h5 class="">South East Asia</h5>
-                                    <small class="">3/17/2023</small>
-                                </div>
-                                
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                                </p>
-                
-                                <div class="d-flex justify-content-between">
-                                    <div class="text-danger fw-bolder">Movie</div>
-                                    <div class="">
-                                        <i class="fa-solid fa-heart text-danger fs-5 m-2"></i>
-                                        <i class="fa-regular fa-message text-danger fs-5 m-2 "></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-               
-        
-        </section>
-
-
-        <!-- popular news start -->
-       <section class="mt-4 p-md-5" id="lastNews">
-        <div class="d-flex justify-content-between p-1">
-            <h3 class="text-muted">Popular news</h3>
-            <div class="text-danger " style="cursor: pointer;">See all<i class="ms-1 fa-solid fa-arrow-right-long"></i></div>
-        </div>
-
-        <div class="" id="">
-            <div class="row ">
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
-                        <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
+                            <img src="https://images.unsplash.com/photo-1596827391559-de49a8f619e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGNlbGVicml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
                             <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
                                 <i class="fa-sharp fa-solid fa-eye"></i> 20k
@@ -388,7 +223,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                     <div class="card rounded-4 m-auto">
                         <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
+                            <img src="https://images.unsplash.com/photo-1597704097219-0f6a59def63d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1hdmljJTIwaGVybyUyMG1vdmllfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
                             <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
                                 <i class="fa-sharp fa-solid fa-eye"></i> 20k
@@ -415,7 +250,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                     <div class="card rounded-4 m-auto">
                         <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
+                            <img src="https://images.unsplash.com/photo-1501432377862-3d0432b87a14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWF2aWMlMjBoZXJvJTIwbW92aWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
                             <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
                                 <i class="fa-sharp fa-solid fa-eye"></i> 20k
@@ -442,61 +277,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                     <div class="card rounded-4 m-auto">
                         <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
-                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
-                            <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
-                                <i class="fa-sharp fa-solid fa-eye"></i> 20k
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
-                                <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
-                        <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
-                            <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
-                            <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
-                                <i class="fa-sharp fa-solid fa-eye"></i> 20k
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
-                                <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
-                        <div class="position-relative" style="height:189px;">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/dc-movies-in-order-05-justice-league-1608143609.jpg" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
+                            <img src="https://plus.unsplash.com/premium_photo-1661855417229-ca181aaf8c22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGNlbGVicml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
                             <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
                                 <i class="fa-sharp fa-solid fa-eye"></i> 20k
@@ -521,20 +302,9 @@
                     </div>
                 </div>
             </div>
-
-
-           
-
-            
         </div>
        </section>
         <!-- last news end -->
-
-
-      
-
-
-        
     </div>
     
     <!-- footer start  -->
@@ -580,8 +350,82 @@
     </section>
     <!-- footer end -->
 
+    <div class="modal modal-lg fade" style="width: 100%" id="modalLogin">
+        <div class="modal-dialog p-5">
+          <div class="modal-content bg-light ">
+              <div class="modal-body">
+                <h4 class="modal-title text-center my-3 text-muted">Login Form</h4>
+                <div class="p-2 rounded">
+                    <div class="row p-2">
+    
+                        <div class="col-6">
+                            <img src="image/login image.png" class=" w-100 h-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="col-6 p-3">
+                            <form action="" class="me-3">
+                                <div class="form-group mb-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Enter your email" id="email">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="password" name="password" class="form-control" placeholder="Enter your password" id="password">
+                                </div>
+            
+                                <div class="form-group mt-5">
+                                    <button class="btn btn-outline-danger me-3">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>  
 
-    <!-- bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <div class="modal modal-lg fade" style="width: 100%" id="modalLRegister">
+        <div class="modal-dialog p-5">
+          <div class="modal-content bg-light ">
+              <div class="modal-body">
+                <h4 class="modal-title text-center my-3 text-muted">Register Form</h4>
+                <div class="p-2 rounded">
+                    <div class="row p-2">
+    
+                        <div class="col-6">
+                            <img src="image/login image.png" class=" w-100 h-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="col-6 p-3">
+                            <form action="" class="me-3">
+                                <div class="form-group mb-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Enter your email" id="email">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="name" name="name" class="form-control" placeholder="Enter your name" id="email">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="address" name="address" class="form-control" placeholder="Enter your address" id="address">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="phone" name="phone" class="form-control" placeholder="Enter your phone" id="phone">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="password" name="password" class="form-control" placeholder="Enter your password" id="password">
+                                </div>
+            
+                                <div class="form-group mt-5">
+                                    <button class="btn btn-outline-danger me-3">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div> 
+
+
+<!-- bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
