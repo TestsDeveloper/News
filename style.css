@@ -10,8 +10,19 @@
     transition: all ease-in-out 0.2s;
 }
 
+.nav-bar-container{
+    position: sticky;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index:200000!important;
+
+}
+
 .search {
     position: absolute;
     right: 1.5rem;
     top: 5px;
 }
+
+
