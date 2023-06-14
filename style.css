@@ -24,5 +24,16 @@
     right: 1.5rem;
     top: 5px;
 }
+ .imgContainer{
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+   
+ }
 
+ .imgContainer img{
+    height: 100%!important;
+    width:100%!important;
+ }
 
