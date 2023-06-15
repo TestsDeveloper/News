@@ -12,25 +12,54 @@
 
 </head>
 <body>
-    <div class="container-lg">
-        <!-- nav bar start -->
-        <div class="m-md-5 d-flex justify-content-between ">
-            <div>
-                <h2 class="text-danger m-3">Bultin</h2>
-            </div>
-           
-            <ul class="text-start list-inline d-md-flex text-secondary d-none ">
-                <li class="p-4"><a href="index.html" class="text-decoration-none text-black">Home</a></li>
-                <li class="p-4"><a href="#" class="text-decoration-none text-secondary">About</a></li>
-                <li class="p-4"><a href="#" class="text-decoration-none text-secondary">Contact</a></li>
-            </ul>
+    <!-- nav bar start -->
+    <div class="bg-light nav-bar-container ">
+        <nav class="container-lg navbar navbar-expand-lg py-2 px-lg-3">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="./index.html">
+                    <h2 class="text-danger">Bultin</h2>
+                  </a>
+                             
+                  <div class="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                  </div>
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
     
-            <div class="m-3">
-                <button class="btn btn-outline-danger me-3 px-4 shadow-sm">Sign In</button>
-                <button class="btn btn-danger px-3 shadow-sm">Sign Up</button>
+                      <li class="nav-item d-md-none d-flex justify-content-between align-items-center">
+                        <div class="">
+                            <button class="btn btn-danger me-1" data-bs-toggle="modal" data-bs-target="#modalLogin">Sign In</button>
+    
+                        </div>
+                        <div class="">
+                            <button class="btn btn-outline-danger shadow-sm" data-bs-toggle="modal" data-bs-target="#modalLRegister">Sign Up</button>
+                        </div>
+                      </li>
+                          
+    
+                  </div>
+                  <div class="d-none d-md-block d-flex justify-content-center align-items-center ">
+                    <button class="btn btn-danger me-1" data-bs-toggle="modal" data-bs-target="#modalLogin">Sign In</button>
+                    <button class="btn btn-outline-danger shadow-sm" data-bs-toggle="modal" data-bs-target="#modalLRegister">Sign Up</button>
+                  </div>
             </div>
-        </div>
-        <!-- nav bar end -->
+            </nav>
+       </div> 
+    <!-- nav bar end -->
+
+    <div class="container-lg">
+        
 
         <div class="container my-4">
             <div class="row justify-content-between align-items-center px-5">
@@ -62,7 +91,7 @@
         <div class="" id="">
             <div class="row ">
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
+                    <div class="card rounded-4 m-auto h-100">
                         <div class="position-relative" style="height:189px;">
                             <img src="https://images.unsplash.com/photo-1604200213928-ba3cf4fc8436?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
@@ -71,25 +100,29 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
+                            <div class="d-flex flex-column h-100 justify-content-between">
                                 <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-muted">Spider Ps4 Game</h5>
+                                        <small class="opacity-50">3/17/2023</small>
+                                    </div>
+                                    <p class="text-muted">
+                                        An authentic Spider-Man adventure. Sony Interactive Entertainment, Insomniac Games, and Marvel have teamed up to create an authentic Spider-Man adventure.
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Game</a></div>
+                                    <div class="">
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
+                    <div class="card rounded-4 m-auto h-100">
                         <div class="position-relative" style="height:189px;">
                             <img src="https://plus.unsplash.com/premium_photo-1661894521636-d7cd973540f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNlbGVicml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
@@ -98,25 +131,29 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="text-muted">3/17/2023</small>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder">Movie</div>
+                            <div class="d-flex flex-column h-100 justify-content-between">
                                 <div class="">
-                                    <i class="fa-solid fa-heart text-danger fs-5 m-2"></i>
-                                    <i class="fa-regular fa-message text-danger fs-5 m-2 "></i>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-muted">Music Show</h5>
+                                        <small class="text-muted">3/17/2023</small>
+                                    </div>
+                                    <p>
+                                        A mix of conversation and music hosted by Andrew Ford. Gregorian chant or hip hop, kd lang or a rookie conductor — all get the rapt attention they deserve.
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-danger fw-bolder">Music</div>
+                                    <div class="">
+                                        <i class="fa-solid fa-heart text-danger fs-5 m-2"></i>
+                                        <i class="fa-regular fa-message text-danger fs-5 m-2 "></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
+                    <div class="card rounded-4 m-auto h-100">
                         <div class="position-relative" style="height:189px;">
                             <img src="https://images.unsplash.com/photo-1532170579297-281918c8ae72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNlbGVicml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
@@ -125,25 +162,29 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
+                            <div class="d-flex justify-content-between flex-column h-100">
                                 <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-muted">Jullia May</h5>
+                                        <small class="opacity-50">3/17/2023</small>
+                                    </div>
+                                    <p class="text-muted">
+                                        Angelina Jolie has frequently been listed as the highest-paid actress. Jolie also won numerous prizes for her outstanding performances.
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Actress</a></div>
+                                    <div class="">
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
+                    <div class="card rounded-4 m-auto h-100">
                         <div class="position-relative" style="height:189px;">
                             <img src="https://plus.unsplash.com/premium_photo-1677094310913-0e393f34cb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmV1cmFsJTIwbmV0d29ya3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
@@ -152,25 +193,29 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
+                            <div class="d-flex justify-content-between flex-column h-100">
                                 <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-muted">Psychology</h5>
+                                        <small class="opacity-50">3/17/2023</small>
+                                    </div>
+                                    <p class="text-muted">
+                                        Psychology is the scientific study of the mind and behavior. Psychologists are actively involved in studying and understanding mental processes, brain functions, and behavior.
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Medicine</a></div>
+                                    <div class="">
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
+                    <div class="card rounded-4 m-auto h-100">
                         <div class="position-relative" style="height:189px;">
                             <img src="https://images.unsplash.com/photo-1553375886-59c75d4ee8a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNlbGVicml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
@@ -179,25 +224,29 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
+                            <div class="d-flex justify-content-between flex-column h-100">
                                 <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-muted">designer</h5>
+                                        <small class="opacity-50">3/17/2023</small>
+                                    </div>
+                                    <p class="text-muted">
+                                        A designer is a person who plans how something will look. An architect is a designer of buildings, drawing detailed blueprints indicating what the structures should look like and how they should be built
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">TV show</a></div>
+                                    <div class="">
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
+                    <div class="card rounded-4 m-auto h-100">
                         <div class="position-relative" style="height:189px;">
                             <img src="https://images.unsplash.com/photo-1596827391559-de49a8f619e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGNlbGVicml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
@@ -206,25 +255,29 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
+                            <div class="d-flex justify-content-between flex-column h-100">
                                 <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-muted">Guitarist</h5>
+                                        <small class="opacity-50">3/17/2023</small>
+                                    </div>
+                                    <p class="text-muted">
+                                        find a good Teacher, get together with other musicians to jam, join, or form a band, and play gigs (or busk on the street) to get their playing experience, chops, and musical skills together
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Music</a></div>
+                                    <div class="">
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
+                    <div class="card rounded-4 m-auto h-100">
                         <div class="position-relative" style="height:189px;">
                             <img src="https://images.unsplash.com/photo-1597704097219-0f6a59def63d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1hdmljJTIwaGVybyUyMG1vdmllfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
@@ -233,25 +286,29 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
+                            <div class="d-flex flex-column h-100 justify-content-between">
                                 <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-muted">Celebrity</h5>
+                                        <small class="opacity-50">3/17/2023</small>
+                                    </div>
+                                    <p class="text-muted">
+                                        Celebrity is a condition of fame and broad public recognition of a person or group as a result of the attention given to them by mass media.
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Celebration</a></div>
+                                    <div class="">
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
+                    <div class="card rounded-4 m-auto h-100">
                         <div class="position-relative" style="height:189px;">
                             <img src="https://images.unsplash.com/photo-1501432377862-3d0432b87a14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWF2aWMlMjBoZXJvJTIwbW92aWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
@@ -260,45 +317,53 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
+                            <div class="d-flex justify-content-between flex-column h-100">
                                 <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-muted">Adventure</h5>
+                                        <small class="opacity-50">3/17/2023</small>
+                                    </div>
+                                    <p class="text-muted">
+                                        Marvel Studios didn't have the film rights. 20th Century Fox did. Disney bought Fox in 2017, so now they can bring other characters into the mix.
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
+                                    <div class="">
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-                    <div class="card rounded-4 m-auto">
+                    <div class="card rounded-4 m-auto h-100">
                         <div class="position-relative" style="height:189px;">
-                            <img src="https://plus.unsplash.com/premium_photo-1661855417229-ca181aaf8c22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGNlbGVicml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
+                            <img src="data:image/jpeg;base64,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" class="card-img-top rounded-top-4 w-100 h-100 object-fit-cover" alt="...">
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25 rounded-top-4"></div>
                             <div class="position-absolute top-0 bg-dark opacity-50 text-white px-3 end-0 py-1 rounded-top-4 rounded-start-0">
                                 <i class="fa-sharp fa-solid fa-eye"></i> 20k
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="text-muted">South East Aisa</h5>
-                                <small class="opacity-50">3/17/2023</small>
-                            </div>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, non ipsam. Vitae, ab culpa adipisci ad delectus aliquam nemo fugit quo aut id. Incidunt veritatis deleniti, odit error eum inventore.
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
+                            <div class="d-flex justify-content-between flex-column h-100">
                                 <div class="">
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
-                                    <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="text-muted">Anime</h5>
+                                        <small class="opacity-50">3/17/2023</small>
+                                    </div>
+                                    <p class="text-muted">
+                                        Haikyu!! (ハイキュー!!, Haikyū!!, from the kanji 排球 "volleyball") is a Japanese manga series written and illustrated by Haruichi Furudate. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump from February 2012 to July 2020, with its chapters collected in 45 tankōbon volumes.
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-danger fw-bolder"><a href="#" class="text-decoration-none text-danger">Movie</a></div>
+                                    <div class="">
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-solid fa-heart text-danger fs-5 m-2"></i></a>
+                                        <a href="#" class="text-decoration-none text-danger"><i class="fa-regular fa-message text-danger fs-5 m-2 "></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -355,6 +420,81 @@
     </div>
 </section>
 <!-- footer end -->
+
+<div class="modal modal-lg fade" style="width: 100%" id="modalLogin">
+    <div class="modal-dialog p-5">
+      <div class="modal-content bg-light ">
+          <div class="modal-body">
+            <h4 class="modal-title text-center my-3 text-muted">Login Form</h4>
+            <div class="p-2 rounded">
+                <div class="row p-2">
+    
+                    <div class="col-6">
+                        <img src="img/login image.png" class=" w-100 h-100 object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-6 p-3">
+                        <form action="" class="me-3">
+                            <div class="form-group mb-3">
+                                <input type="email" name="email" class="form-control" placeholder="Enter your email" id="email">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="password" name="password" class="form-control" placeholder="Enter your password" id="password">
+                            </div>
+            
+                            <div class="form-group mt-5">
+                                <button class="btn btn-outline-danger me-3">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>  
+
+
+  <div class="modal modal-lg fade" style="width: 100%" id="modalLRegister">
+    <div class="modal-dialog p-5">
+      <div class="modal-content bg-light ">
+          <div class="modal-body">
+            <h4 class="modal-title text-center my-3 text-muted">Register Form</h4>
+            <div class="p-2 rounded">
+                <div class="row p-2">
+    
+                    <div class="col-6">
+                        <img src="img/login image.png" class=" w-100 h-100 object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-6 p-3">
+                        <form action="" class="me-3">
+                            <div class="form-group mb-3">
+                                <input type="email" name="email" class="form-control" placeholder="Enter your email" id="email">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="name" name="name" class="form-control" placeholder="Enter your name" id="email">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="address" name="address" class="form-control" placeholder="Enter your address" id="address">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="phone" name="phone" class="form-control" placeholder="Enter your phone" id="phone">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="password" name="password" class="form-control" placeholder="Enter your password" id="password">
+                            </div>
+            
+                            <div class="form-group mt-5">
+                                <button class="btn btn-outline-danger me-3">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
 <!-- bootstrap JavaScript -->
